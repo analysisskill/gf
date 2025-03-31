@@ -70,7 +70,7 @@
                         delete gformData['formId'];
                         delete gformData['state_1'];
                         delete gformData['version_hash'];
-                        dataLayer.push({event: 'gravity_form_submit', formId: formId, inputs: gformData});
+                        dataLayer.push({event: 'laboratoryassist_form_submit', formId: formId, inputs: gformData});
                     }
                 }
             }
@@ -89,10 +89,10 @@
                 delete gformData['formId'];
                 delete gformData['state_1'];
                 delete gformData['version_hash'];
-                dataLayer.push({event: 'gravity_form_submit', formId: formId, inputs: gformData});
+                dataLayer.push({event: 'laboratoryassist_form_submit', formId: formId, inputs: gformData});
                 localStorage.removeItem('gFormData');
             }else {
-                dataLayer.push({event: 'gravity_form_submit', formId: formId});
+                dataLayer.push({event: 'laboratoryassist_form_submit', formId: formId});
             }
 
         });
